@@ -35,32 +35,55 @@ function verify() {
 }
 
 </script>
+<script>
+	function showDiv() {
+   		document.getElementById('rsvp-column').style.display = "block";
+	}
+</script>
 
 
 
 <body>
 
 	<div class="wrapInvite">
-
+        
 		<div class="invite">
 			
-			<div></div>
+			<div class="invite-picture">
 
-		</div>
+					<div class="rsvp-button-wrap">
+					<!--<input type="button" class="button" name="button" value="Show Div" onclick="showDiv()" />-->
+					<button onclick="showDiv()">RSVP</button>
+                    </div>
 
-	<!--<form name="rsvp" action="mailer.php" method="post">
-Username: <input type="text" name="user">
-<input type="submit" value="Submit">
-</form>-->
-<form id="ContactForm" name="ContactForm" method="post" action="">
+				
+			</div>	
+
+		
+
+	
+<!--<form id="ContactForm" name="ContactForm" method="post" action="">
 <input  type="text" name="name" id="name"/>
 <input  type="text" name="email" id="email"/>
 <a href="#" class="button1" onClick="verify()">Send</a>
+</form>-->
+
+<form class="rsvp-form">
+    <div id="rsvp-column" style="display:none;">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter Family Name">
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" placeholder="Enter your Email ID">
+        <label for="guests">Guests</label>
+        <input type="text" id="guests" name="guests" placeholder="Enter Number of Guests">
+    
+	
+	<div class="rsvp-submit-wrap"><input class="rsvp-submit" type="submit" value="Count Us In" /></div>
+</div>
 </form>
-	</div>
 
-
-
+</div>
+</div>
 
 </body>
 </html>

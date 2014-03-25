@@ -1,9 +1,10 @@
+
 html, body {
 	/*width: 980px;*/
 	width: 100%;
 	margin: 0 auto;
 	/*background: url(../images/home-tile.png) repeat;*/
-	background: #ebebeb;
+	background: #404040;
 }
 
 .wrapInvite{
@@ -16,13 +17,19 @@ html, body {
 
 .invite{
 	margin: 20px auto;
-	width: 1000px;
+	width: 800px;
+	position: relative;
 }
-.invite div{
+.invite-picture{
 	
-	transition: all 0.5s ease;
-	
-	width: 425px;
+	transition: background-image 0.5s ease;
+    -webkit-transition: background-image 500ms ease;
+    -moz-transition: background-image 500ms ease;
+    -o-transition: background-image 500ms ease;
+    transition: background-image 500ms ease;
+
+
+    width: 425px;
 	height: 800px;
 	margin: 0 auto;
 	display: block;
@@ -30,8 +37,167 @@ html, body {
 	background-size: 100%
 
 }
-.invite div:hover{
+.invite-picture:hover{
 
 	background: url('invitepurple1.jpg') no-repeat;
-		background-size: 100%
+	background-size: 100%
 }
+.invite-picture:hover .rsvp-button-wrap{
+
+    display: block;
+
+}
+
+.rsvp-form{
+
+	position: absolute;
+	right: -47px;
+	top: 78px;
+}
+
+.rsvp-form:before, .rsvp-form:after{
+	content: " ";
+	display: table;
+}
+
+.rsvp-form:after{
+
+	clear:both;
+}
+
+.rsvp-column{
+
+	width:100%;
+	float: right;
+
+}
+.rsvp-form label {
+    display: block;
+    padding: 40px 5px 5px 2px;
+    font-size: .9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+}
+.rsvp-form input,
+.rsvp-form textarea,
+.rsvp-form select {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: .75em;
+    padding: 6px 12px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    background: transparent;
+}
+ 
+.rsvp-form input,
+.rsvp-form textarea {
+    border: 1px solid #fff;
+}
+ 
+.rsvp-form textarea {
+    min-height: 200px;
+}
+ 
+.rsvp-form input:focus,
+.rsvp-form textarea:focus,
+.rsvp-form label:active + input,
+.rsvp-form label:active + textarea {
+    outline: none;
+    border: 1px solid transparent;
+    background: rgba(136,109,173, .5);
+
+}
+ 
+.rsvp-form select:focus {
+    outline: none;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #fff;
+    font-style: italic;
+}
+ 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+    font-style: italic;
+}
+ 
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #fff;
+    font-style: italic;
+}
+ 
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #fff;
+    font-style: italic;
+}
+ 
+.rsvp-submit-wrap {
+    text-align: center;
+    padding-top: 40px;
+    clear: both;
+}
+ 
+.rsvp-form input.rsvp-submit {
+    background: #5e4c78;
+    border: none;
+    color: #fff;
+    width: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1.1em;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+ 
+.rsvp-form input.rsvp-submit:hover {
+    background: #665282;
+}
+button {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    width: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 4px 20px;
+    font-size: .9em;
+    border-radius: 3px;
+    letter-spacing: .1em;
+
+}
+.rsvp-button-wrap{
+    text-align: center;
+    padding-top: 423px;
+    clear: both;
+    display: none;
+
+
+}
+
+ 
+@media screen and (max-width: 70em) {
+    .rsvp-column {
+        width: 50%;
+    }
+    .rsvp-column:nth-child(3) {
+        width: 100%;
+    }
+}
+ 
+@media screen and (max-width: 48em) {
+    .rsvp-column {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+ 
+
+
