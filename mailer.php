@@ -3,14 +3,15 @@
 $url = 'https://api.sendgrid.com/';
 $user = 'app23344675@heroku.com';
 $pass = 'sl500hn0';
+$body = $_REQUEST['formData'] ;
 
 $params = array(
     'api_user'  => $user,
     'api_key'   => $pass,
     'to'        => 'baneesh87@gmail.com',
     'subject'   => 'testing from curl',
-    'html'      => 'testing body',
-    'text'      => 'testing body',
+    'html'      => $body,
+    'text'      => $body,
     'from'      => 'example@sendgrid.com',
   );
 
