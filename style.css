@@ -1,0 +1,37 @@
+html, body {
+	/*width: 980px;*/
+	width: 100%;
+	margin: 0 auto;
+	/*background: url(../images/home-tile.png) repeat;*/
+	background: #ebebeb;
+}
+
+.wrapInvite{
+	position: absolute;
+	width: 100%;
+	height: 1000px;
+	margin: 0 auto;
+
+}
+
+.invite{
+	margin: 20px auto;
+	width: 1000px;
+}
+.invite div{
+	
+	transition: all 0.5s ease;
+	
+	width: 425px;
+	height: 800px;
+	margin: 0 auto;
+	display: block;
+	background: url('invitepurple.jpg') no-repeat;
+	background-size: 100%
+
+}
+.invite div:hover{
+
+	background: url('invitepurple1.jpg') no-repeat;
+		background-size: 100%
+}
