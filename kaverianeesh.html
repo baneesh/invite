@@ -7,6 +7,7 @@
 
 <link rel="stylesheet" type="text/css" href="style.css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 </head>
 
@@ -33,6 +34,18 @@ function verify() {
     });
   }
 }
+function setHeight(){
+        $(document).ready(function() {
+        $('.invite-picture').css('height', $(window).innerHeight()-40);
+        $('.invite-picture').css('width', $(window).innerWidth()/3.25);
+
+    });
+}
+
+setHeight();
+window.addEventListener('resize', setHeight);
+
+
 
 </script>
 <script>

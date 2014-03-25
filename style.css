@@ -34,17 +34,18 @@ html, body {
 	margin: 0 auto;
 	display: block;
 	background: url('invitepurple.jpg') no-repeat;
-	background-size: 100%
+	background-size: 100% 100%;
 
 }
 .invite-picture:hover{
 
 	background: url('invitepurple1.jpg') no-repeat;
-	background-size: 100%
+	background-size: 100% 100%;
 }
 .invite-picture:hover .rsvp-button-wrap{
 
     display: block;
+
 
 }
 
@@ -172,17 +173,20 @@ button {
     letter-spacing: .1em;
 
 }
+
+button:focus {outline:0;}
+
 .rsvp-button-wrap{
     text-align: center;
-    padding-top: 423px;
     clear: both;
     display: none;
-
-
+    position: absolute;
+    top:69%;
+    left: 44.5%
 }
 
  
-@media screen and (max-width: 70em) {
+@media screen and (max-width: 1120px) {
     .rsvp-column {
         width: 50%;
     }
@@ -191,11 +195,13 @@ button {
     }
 }
  
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 768px) {
     .rsvp-column {
         width: 100%;
         padding: 10px;
     }
+
+}
 
 
  
