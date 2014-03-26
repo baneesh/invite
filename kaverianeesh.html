@@ -25,12 +25,13 @@
 
 <script>
     function verify() {
- if(document.getElementById("name").value=="" || document.getElementById("email").value=="") {
+ if(document.getElementById("name").value=="" || document.getElementById("email").value=="" || document.getElementById("guests").value=="") {
     
-    alert("Please enter a name and an email.");
+    alert("Please enter a name, an email, and the number of guests.");
+    return false;
+
 
  } else {
-    alert("Looks good, sending email");
     //document.getElementById('ContactForm').submit();
     var name=$('#name').val();
     var email=$('#email').val();
@@ -44,6 +45,7 @@
         {
             //data - response from server
             alert(data);
+            alert("Thanks, see you there!");
         },
 
     });
@@ -204,7 +206,7 @@
                     <input type="text" id="guests" name="guests" placeholder="Enter Number of Guests">
     
     
-                    <div class="rsvp-submit-wrap"><input class="rsvp-submit" type="submit" value="Count Us In" onClick="verify()" /></div>
+                    <div class="rsvp-submit-wrap"><input class="rsvp-submit" type="submit" value="Count Us In" onClick="return verify()" /></div>
                 </div>
             </form>
         </div>
