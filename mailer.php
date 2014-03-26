@@ -5,14 +5,16 @@ $user = 'app23344675@heroku.com';
 $pass = 'sl500hn0';
 $name=$_POST['name'];
 $email=$_POST['email'];
+$guests=$_POST['guests'];
+$body= "Name:" . $name . "Number of Guests:" . $guests;
 
 $params = array(
     'api_user'  => $user,
     'api_key'   => $pass,
     'to'        => 'baneesh87@gmail.com',
-    'subject'   => 'testing from curl',
-    'html'      => $name,
-    'text'      => $name,
+    'subject'   => 'RSVP-test',
+    'html'      => $body,
+    'text'      => $body,
     'from'      => $email,
   );
 

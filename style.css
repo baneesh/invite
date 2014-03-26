@@ -51,9 +51,7 @@ html, body {
 
 .rsvp-form{
 
-	position: absolute;
-	right: -47px;
-	top: 78px;
+	width: 100%;
 }
 
 .rsvp-form:before, .rsvp-form:after{
@@ -202,7 +200,16 @@ button:focus {outline:0;}
     }
 
 }
+.invite-form{
 
+    position: relative;
+    min-width: 20%;
+    float: right;
+    margin-right: 10%;
+    min-height: 100%;
+    padding-top: 8%;
+    z-index: 9999;
+}
 
  
 
