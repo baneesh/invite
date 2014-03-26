@@ -6,7 +6,7 @@ $pass = 'sl500hn0';
 $name=$_POST['name'];
 $email=$_POST['email'];
 $guests=$_POST['guests'];
-$body= "Name:" . $name . "Number of Guests:" . $guests;
+$body= "Name: " . $name . " Number of Guests: " . $guests;
 
 $params = array(
     'api_user'  => $user,

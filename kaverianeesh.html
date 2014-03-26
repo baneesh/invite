@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Kaveri &amp; Aneesh</title>
+		<meta name="description" content="Sidebar Transitions: Transition effects for off-canvas views" />
+		<meta name="keywords" content="transition, off-canvas, navigation, effect, 3d, css3, smooth" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/component1.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/modernizr.min.js"></script>
 
-<title>KAVERI &amp; ANEESH</title>
-
-<link rel="stylesheet" type="text/css" href="style.css">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-</head>
+		
+	</head>
 
 <script>
-function verify() {
+    function verify() {
  if(document.getElementById("name").value=="" || document.getElementById("email").value=="") {
     
     alert("Please enter a name and an email.");
@@ -36,33 +48,148 @@ function verify() {
 
     });
   }
-}
-function setHeight(){
+    }
+    function setHeight(){
         $(document).ready(function() {
         $('.invite-picture').css('height', $(window).innerHeight()-40);
         $('.invite-picture').css('width', $(window).innerHeight()*.69);
 
-    });
-}
+        });
+    }
 
-setHeight();
-window.addEventListener('resize', setHeight);
-
-
-
+    setHeight();
+    window.addEventListener('resize', setHeight);
 </script>
 <script>
 	function showDiv() {
    		document.getElementById('rsvp-column').style.display = "block";
 	}
 </script>
+	<body>
+		<div id="st-container" class="st-container">
+			<!-- 	
+				example menus 
+				these menus will be on top of the push wrapper
+			-->
+			<nav class="st-menu st-effect-4" id="menu-4">
 
+				<section id="photostack-1" class="photostack photostack-start">
+				<div>
+					<figure>
+						<a href="http://goo.gl/Qw3ND4" class="photostack-img"><img src="img/1.jpg" alt="img01"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Serenity Beach</h2>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/fhwlSP" class="photostack-img"><img src="img/2.jpg" alt="img02"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Happy Days</h2>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/Jmvr4u" class="photostack-img"><img src="img/3.jpg" alt="img03"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Beautywood</h2>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/49lN3k" class="photostack-img"><img src="img/4.jpg" alt="img04"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Heaven of time</h2>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/NJ1Dhf" class="photostack-img"><img src="img/5.jpg" alt="img05"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Speed Racer</h2>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/Ms7VDl" class="photostack-img"><img src="img/6.jpg" alt="img06"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Forever this</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/7.jpg" alt="img07"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Lovely Green</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/8.jpg" alt="img08"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Wonderful</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/9.jpg" alt="img09"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Love Addict</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/10.jpg" alt="img10"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Friendship</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/11.jpg" alt="img11"/></a>
+						<figcaption>
+							<h2 class="photostack-title">White Nights</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/12.jpg" alt="img12"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Serendipity</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/13.jpg" alt="img13"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Pure Soul</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/14.jpg" alt="img14"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Winds of Peace</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/15.jpg" alt="img15"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Shades of blue</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="img/16.jpg" alt="img16"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Lightness</h2>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+				
+			</nav>
 
+			<!-- content push wrapper -->
+			<div class="st-pusher">
+				<!-- 	
+					example menus 
+					these menus will be under the push wrapper
+				-->
+				
 
-<body>
+				<div class="st-content"><!-- this is the wrapper for the content -->
+					<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+						<!-- Top Navigation -->
+						<div class="wrapInvite">
 
-	<div class="wrapInvite">
-
+        
         <div class= "invite-form">
 
             <form class="rsvp-form" id="ContactForm" name="ContactForm" method="post" action="">
@@ -70,7 +197,7 @@ window.addEventListener('resize', setHeight);
                 <div id="rsvp-column" style="display:none;">
         
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter Family Name">
+                    <input type="text" id="name" name="name" placeholder="Enter Full Name">
                     <label for="email">Email Address</label>
                     <input type="text" id="email" name="email" placeholder="Enter your Email ID">
                     <label for="guests">Guests</label>
@@ -93,20 +220,42 @@ window.addEventListener('resize', setHeight);
 
 				
 		</div>	
-
-		
-
-	
-<!--<form id="ContactForm" name="ContactForm" method="post" action="">
-<input  type="text" name="name" id="name"/>
-<input  type="text" name="email" id="email"/>
-<a href="#" class="button1" onClick="verify()">Send</a>
-</form>-->
-
-
-
     </div>
 </div>
 
-</body>
+						
+						<div class="main clearfix">
+							<div id="st-trigger-effects" class="column">
+								
+								<button data-effect="st-effect-4">Our Wedding Gallery</button>
+							</div>
+						</div>
+						</div><!-- /main -->
+					</div><!-- /st-content-inner -->
+				</div><!-- /st-content -->
+			</div><!-- /st-pusher -->
+		</div><!-- /st-container -->
+		<script src="js/classie.js"></script>
+		<script src="js/sidebarEffects.js"></script>
+		<script src="js/photostack.js"></script>
+		<script>
+			// [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
+			
+			new Photostack( document.getElementById( 'photostack-1' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+			new Photostack( document.getElementById( 'photostack-2' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+			new Photostack( document.getElementById( 'photostack-3' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+		</script>
+	</body>
 </html>
