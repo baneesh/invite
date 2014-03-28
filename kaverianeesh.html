@@ -28,11 +28,12 @@
  if(document.getElementById("name").value=="" || document.getElementById("email").value=="" || document.getElementById("guests").value=="") {
     
     alert("Please enter a name, an email, and the number of guests.");
-    return false;
+    
 
 
  } else {
     //document.getElementById('ContactForm').submit();
+    alert("Sending");
     var name=$('#name').val();
     var email=$('#email').val();
     var guests=$('#guests').val();
@@ -45,7 +46,7 @@
         {
             //data - response from server
             alert(data);
-            alert("Thanks, see you there!");
+            
         },
 
     });
