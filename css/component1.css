@@ -51,9 +51,9 @@
 }
 
 .photostack figcaption h2 {
-	margin: 20px 0 0 0;
+	margin: 10px 0 0 0;
 	color: #a7a0a2;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .photostack-img {
@@ -94,7 +94,7 @@
 	width: 100%;
 	bottom: 5px;
 	z-index: 90;
-	text-align: left;
+	text-align: center;
 	left: 0;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
@@ -111,7 +111,7 @@
 	width: 25px;
 	height: 25px;
 	cursor: pointer;
-	background: #5e4c78;
+	background: #EEA2D2;
 	border-radius: 50%;
 	text-align: center;
 	-webkit-transition: -webkit-transform 0.6s ease-in-out, background 0.3s;
@@ -147,7 +147,7 @@
 }
 
 .photostack nav span.current {
-	background: #5e4c78;
+	background: #553A4B	;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
@@ -303,7 +303,7 @@ figure.photostack-current::after {
 
 /* Since we don't have back sides for the first photo stack, we don't want the current dot to become too big */
 #photostack-1 nav span.current {
-	background: #888;
+	background: #553A4B;
 	-webkit-transform: scale(0.61);
 	transform: scale(0.61);
 }

@@ -33,13 +33,13 @@ html, body {
 	height: 800px;
 	margin: 0 auto;
 	display: block;
-	background: url('../img/invitepurple.jpg') no-repeat;
+	background: url('../img/invitefinal.jpg') no-repeat;
 	background-size: 100% 100%;
 
 }
 .invite-picture:hover{
 
-	background: url('../img/invitepurple1.jpg') no-repeat;
+	background: url('../img/invitefinal1.jpg') no-repeat;
 	background-size: 100% 100%;
 }
 .invite-picture:hover .rsvp-button-wrap{
@@ -142,7 +142,7 @@ html, body {
 }
  
 .rsvp-form input.rsvp-submit {
-    background: #5e4c78;
+    background: #553A4B;
     border: none;
     color: #fff;
     width: auto;
@@ -156,20 +156,21 @@ html, body {
 }
  
 .rsvp-form input.rsvp-submit:hover {
-    background: #665282;
+    background: #66465A;
 }
 .rsvp-button-wrap button {
     background: none;
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
     color: #fff;
-    width: auto;
+    
     cursor: pointer;
     text-transform: uppercase;
     display: inline-block;
-    padding: 4px 20px;
-    font-size: .9em;
+    padding: 10px 20px;
+    font-size: .7em;
     border-radius: 3px;
     letter-spacing: .1em;
+    width: 100%;
 
 }
 
@@ -180,8 +181,12 @@ html, body {
     clear: both;
     display: none;
     position: absolute;
-    top:69%;
-    left: 40%
+    /*top:74%;
+    left: 40%*/
+    width: inherit;
+    background:#553A4B;
+    bottom: 0;
+
 }
 
  
