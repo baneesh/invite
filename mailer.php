@@ -6,8 +6,23 @@ $pass = 'sl500hn0';
 $name=$_POST['name'];
 $email=$_POST['email'];
 $guests=$_POST['guests'];
-$body= "Name: " . $name . "\r\nNumber of Guests: " . $guests;
-$body1= "Hi " . $name . ",\r\nThanks for your RSVP. We look forward to seeing you there. \r\nPlease find the event details below.\r\n\r\nDate: June 14th, 2014\r\nLocation: PV Bay Club, 32821 Seagate Dr., Rancho Palos Verdes, California 90275\r\nTime: 4pm\r\n\r\nYou have confirmed for  ". $guests . " guest(s). Please email us back with any questions or changes.\r\nSee you Soon!\r\nAjay and Kirti Seth";
+$body= 'Name: ' . $name . '
+Number of Guests: ' . $guests;
+$body1= 'Hi ' . $name . ',
+Thanks for your RSVP. We look forward to seeing you there. 
+Please find the event details below.
+
+Date: June 14th, 2014
+Location: PV Bay Club, 32821 Seagate Dr., Rancho Palos Verdes, California 90275
+Time: 4pm
+
+You have confirmed for  '. $guests . ' guest(s).
+
+Please email us back with any questions or changes.
+
+See you Soon!
+
+Ajay and Kirti Seth';
 
 //self mail
 
