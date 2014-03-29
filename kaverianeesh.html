@@ -33,13 +33,13 @@
 
  } else {
     //document.getElementById('ContactForm').submit();
-    alert("Sending");
+    
     var name=$('#name').val();
     var email=$('#email').val();
     var guests=$('#guests').val();
     var  formData = "name="+name+"&email="+email+"&guests="+guests;
     $.ajax({
-        url : "mailer.php",
+        url : "mailer1.php",
         type: "POST",
         data : formData,
         success: function(data, textStatus, jqXHR)
@@ -50,7 +50,7 @@
         },
 
     });
-    alert("sent");
+    alert("Thanks for the RSVP. Please check your email for more details.");
   }
     }
     function setHeight(){
