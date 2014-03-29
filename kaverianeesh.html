@@ -62,9 +62,8 @@
 		    //document.getElementById('ContactForm').submit();
 		    
 		    var name=$('#name').val();
-		    var email=$('#email').val();
-		    var guests=$('#guests').val();
-		    var  formData = "name="+name+"&email="+email+"&guests="+guests;
+		    
+		    var  formData = "name="+name;
 		    $.ajax({
 		        url : "mailer2.php",
 		        type: "POST",

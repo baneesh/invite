@@ -4,8 +4,6 @@ $url = 'https://api.sendgrid.com/';
 $user = 'app23344675@heroku.com';
 $pass = 'sl500hn0';
 $name=$_POST['name'];
-$email=$_POST['email'];
-$guests=$_POST['guests'];
 $body= "Name: " . $name . " can't make it";
 
 //self mail
@@ -17,7 +15,7 @@ $params = array(
     'subject'   => 'RSVP Declined',
     'html'      => $body,
     'text'      => $body,
-    'from'      => $email,
+    'from'      => $'baneesh87@gmail.com',
   );
 
 
