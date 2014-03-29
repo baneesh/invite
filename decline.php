@@ -16,7 +16,7 @@ $params = array(
     'subject'   => 'RSVP Declined',
     'html'      => $body,
     'text'      => $body,
-    'from'      => $'baneesh87@gmail.com',
+    'from'      => 'baneesh87@gmail.com',
   );
 
 
