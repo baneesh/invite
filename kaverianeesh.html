@@ -38,7 +38,7 @@
 		    var guests=$('#guests').val();
 		    var  formData = "name="+name+"&email="+email+"&guests="+guests;
 		    $.ajax({
-		        url : "mailer.php",
+		        url : "accept.php",
 		        type: "POST",
 		        data : formData,
 		        success: function(data, textStatus, jqXHR)
@@ -62,11 +62,11 @@
 		    //document.getElementById('ContactForm').submit();
 		    
 		    var name=$('#name').val();
-		    
+		    var  formData = "name="+name;
 		    $.ajax({
-		        url : "mailer2.php",
+		        url : "decline.php",
 		        type: "POST",
-		        data : name,
+		        data : formData,
 		        success: function(data, textStatus, jqXHR)
 		        {
 		            //data - response from server
