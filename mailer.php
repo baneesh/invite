@@ -7,7 +7,7 @@ $name=$_POST['name'];
 $email=$_POST['email'];
 $guests=$_POST['guests'];
 $body= "Name: " . $name . "<br />Number of Guests: " . $guests;
-//$body1= "Hi " . $name . ",<br /><br />Thanks for your RSVP. We look forward to seeing you there! <br />Please find the event details below.<br /><br /><b>Date:</b> June 14th, 2014<br /><b>Location:</b> PV Bay Club, 32821 Seagate Dr., Rancho Palos Verdes, California 90275 <a href=\"https://www.google.com/maps/place/Palos+Verdes+Bay+Club/@33.742604,-118.388876,17z/data=!4m2!3m1!1s0x0:0x9b914f3d47526755\" target=\"_blank\">Map It</a> <br /><b>Time:</b> 4pm<br /><br />See you Soon!<br />Ajay and Kirti Seth";
+$body1= "Hi " . $name . ",<br /><br />Thanks for your RSVP. We look forward to seeing you there! <br />Please find the event details below.<br /><br /><b>Date:</b> June 14th, 2014<br /><b>Location:</b> PV Bay Club, 32821 Seagate Dr., Rancho Palos Verdes, California 90275 <a href=\"https://www.google.com/maps/place/Palos+Verdes+Bay+Club/@33.742604,-118.388876,17z/data=!4m2!3m1!1s0x0:0x9b914f3d47526755\" target=\"_blank\">Map It</a> <br /><b>Time:</b> 4pm<br /><br />See you Soon!<br />Ajay and Kirti Seth";
 
 //self mail
 
