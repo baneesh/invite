@@ -25,38 +25,38 @@
 
 <script>
     function verify() {
- if(document.getElementById("name").value=="" || document.getElementById("email").value=="" || document.getElementById("guests").value=="") {
+ 		if(document.getElementById("name").value=="" || document.getElementById("email").value=="" || document.getElementById("guests").value=="") {
     
-    alert("Please enter a name, an email, and the number of guests.");
-    
+    		alert("Please enter a name, an email, and the number of guests.");
+    		return false;
+    	}
+    	else {
+		    //document.getElementById('ContactForm').submit();
+		    
+		    var name=$('#name').val();
+		    var email=$('#email').val();
+		    var guests=$('#guests').val();
+		    var  formData = "name="+name+"&email="+email+"&guests="+guests;
+		    $.ajax({
+		        url : "mailer.php",
+		        type: "POST",
+		        data : formData,
+		        success: function(data, textStatus, jqXHR)
+		        {
+		            //data - response from server
+		            alert(data);
+		            
+		        },
 
-
- } else {
-    //document.getElementById('ContactForm').submit();
-    
-    var name=$('#name').val();
-    var email=$('#email').val();
-    var guests=$('#guests').val();
-    var  formData = "name="+name+"&email="+email+"&guests="+guests;
-    $.ajax({
-        url : "mailer1.php",
-        type: "POST",
-        data : formData,
-        success: function(data, textStatus, jqXHR)
-        {
-            //data - response from server
-            alert(data);
-            
-        },
-
-    });
-    alert("Thanks for the RSVP. Please check your email for more details.");
-  }
+		    });
+		    alert("Thanks for the RSVP. Please check your email for more details.");
+		 }
     }
     function verifyn() {
- 		if(document.getElementById("name").value=="" || document.getElementById("email").value=="") {
+ 		if(document.getElementById("name").value=="") {
     
-    		alert("Please enter your name and email address");
+    		alert("Please enter your name");
+    		return false;
     	}
     	else {
 		    //document.getElementById('ContactForm').submit();
@@ -466,8 +466,8 @@
 					                    <input type="text" id="guests" name="guests" placeholder="Enter Number of Guests">
 					    
 					    
-					                    <div class="rsvp-submit-wrap"><input class="rsvp-submit" type="submit" value="Count Us In" onClick="verify()" />
-					                    	<input class="rsvp-submit" type="submit" value="Can't Make It" onClick="verifyn()" /></div>
+					                    <div class="rsvp-submit-wrap"><input class="rsvp-submit" type="submit" value="Count Us In" onClick="return verify()" />
+					                    	<input class="rsvp-submit" type="submit" value="Can't Make It" onClick="return verifyn()" /></div>
 					                </div>
 					            </form>
 					        </div>
