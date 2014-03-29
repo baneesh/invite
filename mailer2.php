@@ -4,6 +4,7 @@ $url = 'https://api.sendgrid.com/';
 $user = 'app23344675@heroku.com';
 $pass = 'sl500hn0';
 $name=$_POST['name'];
+
 $body= "Name: " . $name . " can't make it";
 
 //self mail

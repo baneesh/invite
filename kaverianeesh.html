@@ -63,11 +63,10 @@
 		    
 		    var name=$('#name').val();
 		    
-		    var  formData = "name="+name;
 		    $.ajax({
 		        url : "mailer2.php",
 		        type: "POST",
-		        data : formData,
+		        data : name,
 		        success: function(data, textStatus, jqXHR)
 		        {
 		            //data - response from server
