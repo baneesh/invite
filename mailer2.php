@@ -6,7 +6,7 @@ $pass = 'sl500hn0';
 $name=$_POST['name'];
 $email=$_POST['email'];
 $guests=$_POST['guests'];
-$body= "Name: " . $name . "can't make it";
+$body= "Name: " . $name . " can't make it";
 
 //self mail
 
