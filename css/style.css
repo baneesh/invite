@@ -150,7 +150,7 @@ html, body {
     text-transform: uppercase;
     display: inline-block;
     padding: 10px 30px;
-    font-size: 1.1em;
+    font-size: .6em;
     border-radius: 3px;
     letter-spacing: 1px;
 }
