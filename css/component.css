@@ -198,7 +198,15 @@ body,
 	-webkit-transform: translate3d(90%, 0, 0);
 	transform: translate3d(300px, 0, 0);
 }
+.back{
 
+	display: none;
+}
+.st-effect-4.st-menu-open .back{
+	display: block;
+	position: absolute;
+	z-index: 100000;
+}
 .st-effect-4.st-menu {
 	z-index: 1;
 	-webkit-transform: translate3d(-50%, 0, 0);
