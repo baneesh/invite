@@ -22,25 +22,28 @@ html, body {
 }
 .invite-picture{
 	
-	transition: background-image 0.5s ease;
+	/*transition: background-image 0.5s ease;
     -webkit-transition: background-image 500ms ease;
     -moz-transition: background-image 500ms ease;
     -o-transition: background-image 500ms ease;
-    transition: background-image 500ms ease;
+    transition: background-image 500ms ease;*/
 
 
     width: 425px;
 	height: 800px;
 	margin: 0 auto;
 	display: block;
-	background: url('../img/invitefinal.jpg') no-repeat;
-	background-size: 100% 100%;
+	background: url('../img/cardcombine.jpg') no-repeat;
+	background-size: 100% 200%;
+
 
 }
 .invite-picture:hover{
 
-	background: url('../img/invitefinal1.jpg') no-repeat;
-	background-size: 100% 100%;
+	background: url('../img/cardcombine.jpg') no-repeat;
+	background-size: 100% 200%;
+    background-position-y: 100%;
+    
 }
 .invite-picture:hover .rsvp-button-wrap{
 

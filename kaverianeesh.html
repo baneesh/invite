@@ -22,22 +22,7 @@
 
 		
 	</head>
-	<script type="text/javascript">
-		<!--//--><![CDATA[//><!--
-			var images = new Array()
-			function preload() {
-				for (i = 0; i < preload.arguments.length; i++) {
-					images[i] = new Image()
-					images[i].src = preload.arguments[i]
-				}
-			}
-			preload(
-				"img/invitefinal.jpg",
-				"img/invitefinal1.jpg"
-				
-			)
-		//--><!]]>
-	</script>
+	
 <script>
     function verify() {
  		if(document.getElementById("name").value=="" || document.getElementById("email").value=="" || document.getElementById("guests").value=="") {
@@ -97,6 +82,7 @@
         $(document).ready(function() {
         $('.invite-picture').css('height', $(window).innerHeight()-40);
         $('.invite-picture').css('width', $(window).innerHeight()*.69);
+        
 
         });
     }
