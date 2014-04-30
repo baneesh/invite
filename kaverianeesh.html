@@ -9,6 +9,8 @@
 		<meta name="keywords" content="transition, off-canvas, navigation, effect, 3d, css3, smooth" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
+        <!-- icon fonts -->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/icons.css" />
@@ -91,6 +93,9 @@
 <script>
 	function showDiv() {
    		document.getElementById('rsvp-column').style.display = "block";
+	}
+	function hideDiv() {
+   		document.getElementById('rsvp-column').style.display = "none";
 	}
 </script>
 	<body>
@@ -487,11 +492,11 @@
 
         
 					        <div class= "invite-form">
-
+                            	
 					            <form class="rsvp-form" id="ContactForm" name="ContactForm" method="post" action="">
-
+									
 					                <div id="rsvp-column" style="display:none;">
-					        
+					        			<span class="close-bt" onclick="hideDiv()"><i class="fa fa-times"></i></span>
 					                    <label for="name" class="paddingNull">Name</label>
 					                    <input type="text" id="name" name="name" placeholder="Enter Full Name">
 					                    <label for="email">Email Address</label>
