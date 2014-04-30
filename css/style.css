@@ -33,16 +33,18 @@ html, body {
 	height: 800px;
 	margin: 0 auto;
 	display: block;
-	background: url('../img/cardcombine.jpg') no-repeat;
-	background-size: 100% 200%;
+	background: url('../img/cardcombine2.jpg') no-repeat;
+	background-size: 100% 201%;
 
 
 }
 .invite-picture:hover{
 
-	background: url('../img/cardcombine.jpg') no-repeat;
+	background: url('../img/cardcombine2.jpg') no-repeat;
+	/*background-size: 100% 200%;
+    background-position-y: 100%;*/
+	background-position:bottom center;
 	background-size: 100% 200%;
-    background-position-y: 100%;
     
 }
 .invite-picture:hover .rsvp-button-wrap{
@@ -182,7 +184,8 @@ html, body {
 .rsvp-button-wrap{
     text-align: center;
     clear: both;
-    display: none;
+    /*display: none;*/
+	display: inline-block;
     position: absolute;
     /*top:74%;
     left: 40%*/
@@ -223,5 +226,41 @@ html, body {
 
 
  
+/* iPhone landscape */
+@media screen and (max-width: 480px) {
+	
+
+.invite {
+    width: 100%;
+}
 
 
+
+}
+
+/* Phone Portrait */
+@media screen and (max-width: 320px) {
+	
+
+.invite {
+    width: 100%;
+}
+.invite-picture{
+	width:100% !important;
+	}
+.invite-form {
+    background: #404040;
+    float: none;
+    left: 10px;
+    margin: 0px;
+    min-height: inherit;
+    min-width: inherit;
+    padding: 12px;
+    position: absolute;
+    top: 60px;
+    z-index: 9999;
+}
+.paddingNull{
+	padding-top:0px !important;
+	}
+}
