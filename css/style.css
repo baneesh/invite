@@ -233,21 +233,6 @@ html, body {
 /* iPhone landscape */
 @media screen and (max-width: 480px) {
 	
-
-.invite {
-    width: 100%;
-}
-.invite-picture{
-	width:100% !important;
-	}
-
-
-}
-
-/* Phone Portrait */
-@media screen and (max-width: 320px) {
-	
-
 .invite {
     width: 100%;
 	margin: 10px auto;
@@ -268,7 +253,41 @@ html, body {
     z-index: 9999;
 }
 .paddingNull{
-	padding-top:20px !important;
+	padding-top:10px !important;
+	}
+.rsvp-button-wrap{
+	bottom: -20px;
+	}
+.rsvp-form input.rsvp-submit{
+	padding: 10px 26px;
+	}
+}
+
+/* Phone Portrait */
+@media screen and (max-width: 320px) {
+	
+
+.invite {
+    width: 100%;
+	margin: 10px auto;
+}
+.invite-picture{
+	width:100% !important;
+	}
+.invite-form {
+    background: #404040;
+    float: none;
+    left: 10px;
+    margin: 0px;
+    min-height: inherit;
+    min-width: inherit;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    z-index: 9999;
+}
+.paddingNull{
+	padding-top:10px !important;
 	}
 .rsvp-button-wrap{
 	bottom: -20px;
